@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import Entypo from '@expo/vector-icons/Entypo';
 
 export default function App() {
   return (
@@ -23,7 +24,12 @@ export default function App() {
 
       <Text style={{fontSize: 20, fontWeight: 'bold'}}>Burak Sener</Text>
       <Text>Software Engineer Entrepenuer</Text>
-      <AntDesign name="github" size={24} color="black" />
+      
+      <View style={{flexDirection: "row", gap: 15}}>
+        <AntDesign name="github" size={24} color="black" />
+        <Entypo name="linkedin" size={24} color="black" />
+      </View>
+      
       <StatusBar style="auto" />
     </View>
 

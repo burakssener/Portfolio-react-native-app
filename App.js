@@ -4,26 +4,8 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Entypo from '@expo/vector-icons/Entypo';
 
+import ProjectCard from "./ProjectCard";
 
-function ProjectCard(props){
-  return (
-      <View >
-        <Image source={props.image}
-        style={{
-          height: 150,
-          aspectRatio: 16/9,
-          borderRadius: 20,
-          marginTop: 6 
-        }}/>
-        <Text style={{
-          textAlign: "center",
-          fontSize: 16,
-          marginTop: 8
-
-        }}>{props.name}</Text>
-      </View>
-  )   ;
-}
  
 export default function App() {
 
